@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=" {{ url_for ('static', filename ='css/about.css') }}"  />
+    <link  rel="stylesheet" href="{{ url_for ('static', filename ='css/main.css')}}"  />
+    
+</head>
+<body>
+    <section>
+        <div class="Button-Container_2">
+            <div><a href="{{ url_for('home') }}"><button class="buttona" id="Home-button">BirdWat</button></a></div>
+            <div class="right-buttonsa">
+                <div><a href="{{ url_for('mybirdwat_page') }}"><button class="buttona" id="button">MyBirdWat</button></a></div>
+                <div><a href="{{ url_for('about_page') }}"><button class="buttona" id="button">About</button></a></div>
+                <div><a href="{{ url_for('birds_page') }}"><button class="buttona" id="button">Birds</button></a></div>
+            </div>  
+        </div>
+    </section>
+    <div class="about_1">
+        <h1 id="slide_in">Welcome to BirdWat</h1>
+        <p id="flash_in">The best place for bird watchers!<br>
+        
+            We at BirdWat are committed to introducing people to the amazing world of birds and building a community of outdoor enthusiasts who value the diversity and beauty of birds. <br>
+            Our website provides chances to improve your bird viewing experience. There's something for everyone here, from perusing an extensive database of bird species to documenting your findings and exchanging sightings with other bird watchers. <br>
+            Our goal is to enable and encourage bird lovers to explore, educate themselves, and establish a connection with the surrounding natural environment.<br>
+            We hope that our interactive features, informative information, and user-friendly interface will make bird watching rewarding, pleasurable, and accessible for lovers of all ages and backgrounds. <br>
+            Come along on BirdWat as we take you on an exciting journey into the fascinating world of bird viewing. </p>
+    </div>
+    <div class="section hidden">
+        <h1 id="slide_in">Mission Statement</h1>
+        <p>At Bird Watcher Application, we want to empower and inspire bird watchers of all stripes by offering an all-inclusive platform that encourages a closer relationship with the avian world. We hope that our creative application will help people discover, observe, and comprehend birds while supporting environmental stewardship and conservation initiatives. Our goal is to establish a lively community where people can interact, share knowledge, and work toward the preservation of different bird species and their habitats. We aim to enrich lives and foster a greater appreciation for the beauty and diversity of our feathery friends by being committed to accessibility, education, and sustainability."</p>
+
+    </div>
+    <div class="section hidden background1">
+        <h1>Team Information</h1>
+        <p>Introducing the team and individuals behind the development of the application.<br>
+         </p>
+        <section class="sections container">
+            <div class="sec1">
+                <h1>Manushna Bandari</h1>
+              <!--  <p>I'm gonna decide what to write here later</p>-->
+            </div>
+            <div class="sec1">
+                <h1>Lasya Moram</h1>
+                
+            </div>
+            <div class="sec1">
+                <h1>Prasad Karamsetty</h1>
+               
+            </div>
+        </section>
+    </div>
+    <div class="section hidden background2">
+        <h1>Features and Functionality</h1>
+        <p>1.Bird Identification<br>
+           2.Bird Library<br>
+           3.Observation Log<br>
+           4.Data Sharing</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener("scroll", revealSection);
+        function revealSection() {
+        var sections = document.querySelectorAll(".section");
+        sections.forEach(function(section) {
+         var sectionTop = section.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+  
+        if (sectionTop < windowHeight * 0.75) { 
+         section.classList.remove("hidden");
+        }
+        });
+        }
+        });
+    </script>
+</body>
+</html>

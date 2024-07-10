@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirdWat - Discover the Wonders of Birdwatching and Conservation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        /* Add any additional CSS styles here */
+        .Sections {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .Sections div {
+            flex-basis: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <div class="Button-Container_1">
+                <div><button class="button" id="Home-button" class="btn">BirdWat</button></div>
+            </div>
+        </section>
+
+        <div class="container_1">
+            <div class="content_1"> 
+                <h1>Discover the beauty of Bird Watching with BirdWat</h1>
+            </div>   
+        </div>
+
+        <div class="Button-Container">
+            <div class="right-buttons">
+                <div ><a href="{{ url_for('mybirdwat_page') }}"><button class="button" id="buttonh">MyBirdWat</button></a></div>
+                <div><a href="{{ url_for('about_page') }}"><button class="button" id="buttona">About</button></a></div>
+                <div><a href="{{ url_for('birds_page') }}"><button class="button" id="buttonb">Birds</button></a></div>
+            </div>  
+        </div>
+
+        <div class="container_2">
+            <div>
+                <h1>Discover the Wonders of Birdwatching and Conservation</h1>
+                <p>Welcome to the captivating realm of birdwatching and conservation, where every bird sighting holds a world of wonder.
+                    Embark on a journey to explore the diverse world of birds and contribute to their conservation efforts.</p>
+                <section class="Sections">
+                    <div>
+                        <h2 class name="birdp">Explore the World of Birds</h2>
+                        <p ><li>Delve into the enchanting world of birds, where their vibrant plumage and graceful flight inspire awe and wonder.</li>
+                            <li>Connect with nature through the rewarding experience of birdwatching, offering opportunities for leisure, exploration, and education.</li></p>
+                    </div>
+                    <div>
+                        <h2>Birdwatching Tips and Techniques</h2>
+                        <p><li>Equip yourself with essential birdwatching skills, from honing your observation abilities to recognizing common bird species.</li>
+                        <li>Enhance your birdwatching experience with expert advice and techniques, elevating your appreciation for these feathered wonders.</li></p>
+                    </div>
+                    <div>
+                        <h2>Bird Conservation and Citizen Science</h2>
+                        <p><li>Recognize the critical role of birds in maintaining the health of global ecosystems and join efforts to protect their habitats.</li>
+                            <li>Engage in citizen science projects and conservation activities to safeguard bird species threatened by habitat loss and climate change.</li></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("Home-button").addEventListener("click", () => {
+            window.location.href = window.location.href;
+        });
+        
+        document.getElementById("buttonh").addEventListener("click", () => {
+            window.location.href = "/home";
+        });
+        
+        document.getElementById("buttona").addEventListener("click", () => {
+            window.location.href = "/about";
+        });
+        
+        document.getElementById("buttonb").addEventListener("click", () => {
+            window.location.href = "/birds";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for ('static', filename ='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for ('static', filename ='css/about.css') }}">
+        <link rel="stylesheet" href="{{ url_for ('static', filename ='css/birds.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    </head>
+    <body>
+
+        <section>
+            <div class="Button-Container_2">
+                <div><a href="{{ url_for('home') }}"><button class="buttona" id="Home-button">BirdWat</button></a></div>
+                <div class="right-buttonsa">
+                    <div><a href="{{ url_for('mybirdwat_page') }}"><button class="buttona" id="button">MyBirdWat</button></a></div>
+                    <div><a href="{{ url_for('about_page') }}"><button class="buttona" id="button">About</button></a></div>
+                    <div><a href="{{ url_for('birds_page') }}"><button class="buttona" id="button">Birds</button></div></a>
+                </div>  
+            </div>
+        </section>
+        <div class="cards">
+            
+        <div class="card">
+            <img src="https://www.songofamericabirdseed.com/wp-content/uploads/2022/04/Downey-Woodpecker-1050x700.jpg" alt="Downey WoodPecker">
+            <div class="card-content">
+                <h3 class="card-title">Downey WoodPecker</h3>
+                <p class="card-description">The downy woodpecker is a species of woodpecker, the smallest in North America. Length ranges from 14 to 18 cm. Downy woodpeckers primarily live in forested areas throughout the United States and Canada, with the exception of deserts in the southwest and the northern tundra</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.forumcomm.com/dims4/default/1efa299/2147483647/strip/true/crop/5568x3712+0+0/resize/1599x1066!/quality/90/?url=https%3A%2F%2Ffcc-cue-exports-brightspot.s3.us-west-2.amazonaws.com%2Fbemidjipioneer%2Fbinary%2Famerican-goldfinch-6298918_binary_7123457.jpg" alt="America Goldfinch">
+            <div class="card-content">
+                <h3 class="card-title">America Goldfinch</h3>
+                <p class="card-description">The American goldfinch is a small North American bird in the finch family. It is migratory, ranging from mid-Alberta to North Carolina during the breeding season, and from just south of the Canada–United States border to Mexico during the winter. </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://snworksceo.imgix.net/jhn/d1f60e2e-d350-4cf0-b332-421798bcfff5.sized-1000x1000.jpg?w=1000" alt="Barn Owl">
+            <div class="card-content">
+                <h3 class="card-title">Barn Owl</h3>
+                <p class="card-description">The barn owl (Tyto alba) is the most widely distributed species of owl in the world and one of the most widespread of all species of birds, being found almost everywhere except for polar and desert regions, Asia north of the Himalayas, some islands of Indonesia, and some Pacific Islands.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.allaboutbirds.org/guide/assets/og/75704531-1200px.jpg" alt="House Sparrow">
+            <div class="card-content">
+                <h3 class="card-title">House Sparrow</h3>
+                <p class="card-description">The house sparrow (Passer domesticus) is a bird of the sparrow family Passeridae, found in most parts of the world. It is a small bird that has a typical length of 16 cm (6.3 in) and a mass of 24–39.5 g (0.85–1.39 oz).</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:53533d89-9126-48eb-9ddd-68523c84b4dd/___1321804052-Species-Crow-Carrion-Crow-on-branch_1.9729622456807021118.jpg" alt="Crow">
+            <div class="card-content">
+                <h3 class="card-title">Crow</h3>
+                <p class="card-description">A crow is a bird of the genus Corvus, or more broadly a synonym for all of Corvus. The word "crow" is used as part of the common name of many species.</p>
+            </div>
+        </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,90 @@
+
+.about_1, .section {
+    width: 100%;
+    background-color: rgb(232, 245, 231);
+    display: block;
+    padding: 30px; 
+    justify-content: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Button-Container_2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+#Home-button {
+    color: aliceblue;
+}
+
+
+.buttona {
+    background-color: transparent;
+    border: none;
+    font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+
+
+.right-buttonsa {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+h1#slide_in {
+    font-size: 3rem; 
+    animation: slideIn 1s ease-in-out;
+}
+
+
+p#flash_in {
+    font-size: 1.2rem; 
+    animation: flash-in 1s ease-out;
+} 
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes flash-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+    transition: opacity 1s;
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 0.5s ease;    
+}
+.background1{
+    background-color: rgb(232, 245, 231);
+    height: auto;
+    
+}
+.sec1 {
+    
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%; 
+}
+.background2{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 40%;
+}

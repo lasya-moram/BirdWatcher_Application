@@ -1,0 +1,26 @@
+.glass {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;                  
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+    backdrop-filter: blur(10px);                 
+    -webkit-backdrop-filter: blur(10px);         
+    padding: 10px;                               
+    margin: 10px;                                
+    color: white;                                
+    text-align: center;                          
+}
+
+.glass_position {
+    height: 50vh;  
+    display: flexbox;  
+    align-items: center;  
+    justify-content: center;  
+    padding: 30px;
+    margin: 80px auto;
+    width: 70%;
+}
+
+h3, p {
+    margin: 10px 0;  /* Vertical spacing for headings and paragraphs */
+}

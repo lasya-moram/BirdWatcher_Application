@@ -1,0 +1,54 @@
+
+.container_3{
+    padding: 5%;
+    padding-top: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5); 
+    margin-bottom: 40px;
+    text-align:center;
+}  
+.Button-Container{
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    backdrop-filter: blur(100px);
+    padding: 10px;
+}
+.container_3 h1{
+    padding-top: 3%;
+    justify-content: center;
+    font-size: 8vw;
+    animation: flash-in 5s ease-out;
+}
+@keyframes flash-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.HomeSection{
+    background-color: rgb(232, 245, 231);
+    height: auto;
+    justify-content: center;
+    padding: 5%;
+    margin-top: 3.5%;
+}
+#inputfile{
+    
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+}
+.filecontainer button{
+    background-color: rgb(198, 216, 201);
+}
+
+@media screen and (max-width: 768px) {
+    .container_3 {
+        padding: 10px;
+    }
+    
+    .container_3 h1 {
+        font-size: 8vw;
+    }
+    
+    .HomeSection {
+        padding: 10%;
+    }
+}

@@ -1,0 +1,126 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('https://images.pexels.com/photos/1581103/pexels-photo-1581103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Button-Container_1{
+    height: 1%;
+    margin-bottom: 5%;
+    padding: 10px 20px;   
+}
+.Button-Container_1 button{
+    color: white; 
+    padding: 20px 20px; 
+    
+}
+.Button-Container{
+    background-color: rgb(254, 254, 254);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    
+}
+.birdp{
+    top:10%;
+    color: blue;
+}
+.mybirdwhat{
+    color: red;
+}
+.button{
+    background-color: transparent;
+    border: none;
+    font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50%;
+    color: rgb(0, 0, 0);    
+}
+.right-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.right-buttons button:hover{
+text-decoration: none;
+cursor:pointer;
+}
+.container_1{
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 90px;
+    height: auto;
+    width:80%;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+    display: flex;
+    margin:auto;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+    border-radius: 20px; 
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.container_2{
+    background-color:rgb(232, 245, 231);
+    padding-top:5%;
+    height: auto;
+    margin-top:5%;
+    border-radius: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items:center;
+    text-align:center;
+}
+.sections{
+    display:flex;
+    padding-top: 1%;
+    padding: 10%;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sections > div {
+    flex-basis: 20%; 
+    margin-bottom: 20px;
+}
+.Footer{
+    background-color: rgb(84, 132, 99);
+    height: 50%;
+    width: 100%;
+    display:flex;
+    margin-top:5%;
+    margin-bottom: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bolder;
+}
+.Footer img{
+    
+    padding: 80px;
+}
+.Footer h1{
+    align-items:flex-end;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .Button-Container_1 {
+        padding: 5px;
+    }
+
+    .Button-Container_1 button {
+        padding: 10px 15px;
+    }
+
+    .container_1 {
+        width: 90%;
+    }
+
+    .sections > div {
+        flex-basis: 100%;
+    }
+
+    .Footer img {
+        width: 30%;
+    }
+}
